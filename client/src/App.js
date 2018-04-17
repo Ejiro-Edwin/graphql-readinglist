@@ -6,12 +6,15 @@ import logo from './logo.svg';
 import './App.css';
 
 import BookList from './components/BookList';
+import AddBook from './components/AddBook';
 
 const client = new ApolloClient({
   uri: 'http://localhost:4000/graphql'
 });
 
 class App extends Component {
+
+
   render() {
     return (
       <ApolloProvider client={client}>
@@ -25,6 +28,7 @@ class App extends Component {
             To get started, edit <code>src/App.js</code> and save to reload.
           </p>
           <BookList />
+          <AddBook />
         </div>
       </ApolloProvider>
     );
