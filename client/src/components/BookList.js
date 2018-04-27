@@ -6,7 +6,7 @@ class BookList extends Component {
 
   displayBooks() {
     var data = this.props.data;
-
+    console.log(this.props);
     if(data.loading) {
       return (<div>Loading ...</div>)
     }
