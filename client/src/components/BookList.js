@@ -20,7 +20,7 @@ class BookList extends Component {
     let html = data.books.map(book => <li key={ book.id } onClick={(e) => this.setState({selected: book.id})}>{book.name}</li>);
 
     return (
-      <ul>
+      <ul id="book-list">
         { html }
       </ul>
     );
