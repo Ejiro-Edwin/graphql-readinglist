@@ -17,9 +17,7 @@ else {
   uri = 'https://graphql-readinglist-server.herokuapp.com/graphql'
 }
 
-const client = new ApolloClient({
-  uri: 'http://localhost:4000/graphql'
-});
+const client = new ApolloClient({uri});
 
 class App extends Component {
 
