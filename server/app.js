@@ -8,8 +8,9 @@ const cors = require('cors');
 const morgan = require('morgan');
 
 
-
+const port = process.env.PORT || 4000;
 const app = express();
+
 
 app.use(morgan('dev'));
 app.use(cors());
@@ -28,6 +29,7 @@ app.use((req, res) => {
   res.send('error');
 });
 
-app.listen(4000, () => {
-  console.log('App listening on port 4000');
+
+app.listen(port, () => {
+  console.log('App listening on port ' + port);
 });
