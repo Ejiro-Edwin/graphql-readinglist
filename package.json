@@ -1,11 +1,11 @@
 {
   "name": "graphql-playlist",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "Proof of concept reading list application built with React, Node + Express, and GraphQL as taught by the Net Ninja.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently --kill-others \"npm run dev --prefix ./server\" \"npm start --prefix ./client\""
+    "dev": "concurrently --kill-others \"npm run dev --prefix ./server\" \"npm start --prefix ./client\"",
+    "postinstall": "concurrently \"npm install --prefix ./server\" \"npm install --prefix ./client\""
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/marciandmnd/graphql-playlist/issues"
   },
-  "homepage": "https://github.com/marciandmnd/graphql-playlist#readme"
+  "homepage": "https://github.com/marciandmnd/graphql-playlist#readme",
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  }
 }
