@@ -6,6 +6,9 @@ Proof of concept reading list application built with React, Node + Express, and 
 
 [GraphQL Tutorial by the Net Ninja](https://www.youtube.com/watch?v=Y0lDGjwRYKw&list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f)
 
+<a href="http://graphql-readinglist.s3-website-us-east-1.amazonaws.com/" target="_blank">DEMO</a>
+
+
 ## Getting Started
 
 ```
