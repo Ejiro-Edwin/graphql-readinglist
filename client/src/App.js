@@ -8,6 +8,15 @@ import './App.css';
 import BookList from './components/BookList';
 import AddBook from './components/AddBook';
 
+// server side uri
+let uri;
+if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+  uri = 'http://localhost:4000/graphql'
+} 
+else {
+  uri = 'https://graphql-readinglist-server.herokuapp.com/graphql'
+}
+
 const client = new ApolloClient({
   uri: 'http://localhost:4000/graphql'
 });
