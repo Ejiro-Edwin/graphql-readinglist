@@ -27,10 +27,6 @@ To start the application, from the project root run `npm run dev`
 
 * [Node.js](https://nodejs.org/en/)
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
 ## Built With
 
 * [GraphQL](https://graphql.org/) - A query language for your API
